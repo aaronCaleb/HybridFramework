@@ -1,0 +1,38 @@
+Java Modifiers
+
+public class Main
+
+public keyword is access modifier, meaning that it is used to set the access level for classes, attributes, methods and constructors.
+
+Modifiers are grouped into the following:
+(a) Access Modifiers
+(b) Non-Access Modifiers
+
+Access Modifiers for Classes
+
+public - The class is accessible by all the other classes
+default - The class is only accessible by classes in the same package. This is used when you don't specify a modifier;
+
+Access Modifiers for attributes, methods and constructors
+
+public - the code is accessible for all classes
+private - the code is only accessible within the declared class
+default - the code is only accessible in the same package
+protected - the code is accessible in the same package and child classes.
+
+Non-Access Modifiers for Classes
+
+final - the class cannot be inherited by other classes
+abstract - the class cannot ve used to create objects, to access an abstract class, it must be inherited from another class.
+
+Non-Access Modifiers for Attributes and Methods
+
+final - Attributes and Methods cannot be overridden
+static - attributes and methods belong to the class, rather than an object
+abstract - can only be used in an abstract class and can only be used on methods. the methods do not have a body, for example abstract void run();.
+the body is provided by the child class 9inherited from).
+transient - Attributes and Methods are skipped when serializing the object containing them.
+synchronized - Methods can only be accessed by one thread at a time.
+volatile - the value of an attribute is not cached thread-locally and is always read from the main memory.
+
+
